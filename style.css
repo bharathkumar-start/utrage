@@ -1,0 +1,44 @@
+:root {
+    --blue-500: #3b82f6;
+    --blue-600: #2563eb;
+  }
+  
+  /* Hero gradient */
+  .hero-gradient {
+    background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 100%);
+  }
+  
+  /* CTA button */
+  .cta-button {
+    display: inline-block;
+    background-color: var(--blue-500);
+    color: #fff;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.12);
+    transition: transform 0.1s ease, background-color 0.15s ease;
+    text-decoration: none;
+  }
+  .cta-button:hover { background-color: var(--blue-600); transform: translateY(-3px); }
+  .cta-button:active { transform: translateY(0); }
+  
+  /* Header when scrolling */
+  #header.bg-blur {
+    background-color: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(6px);
+  }
+  
+  /* Mobile menu */
+  #mobile-menu.show { display: block; }
+  
+  /* Feature card hover */
+  .feature-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .feature-card:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(2, 6, 23, 0.08); }
+  
+  /* Accessibility focus */
+  a:focus, button:focus { outline: 3px solid rgba(59, 130, 246, 0.18); outline-offset: 2px; }
+  
+  /* Images */
+  img { max-width: 100%; height: auto; display: block; }
+  
